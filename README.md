@@ -44,7 +44,18 @@ HWPX_SERVICE_TOKEN=
 CRON_SECRET=
 AES_ENCRYPTION_KEY=
 ADMIN_NOTIFICATION_EMAIL=
+ADMIN_ACCESS_TOKEN=
 ```
+
+## 관리자 접근
+
+`/admin` 화면은 `ADMIN_ACCESS_TOKEN`이 있으면 해당 값을, 없으면 `CRON_SECRET`을 접근 토큰으로 사용합니다.
+
+```text
+https://esg.soilabcoop.kr/admin?token=관리자_토큰
+```
+
+한 번 접속하면 8시간 동안 httpOnly 쿠키가 유지됩니다.
 
 ## 다음 단계
 
