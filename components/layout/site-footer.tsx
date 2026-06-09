@@ -3,6 +3,7 @@ import Link from "next/link";
 const footerLinks = [
   { href: "/services/assessment", label: "ESG 진단" },
   { href: "/services/consulting", label: "심화 컨설팅" },
+  { href: "/rfp-readiness", label: "입찰 과업 대응" },
   { href: "/services/reporting", label: "보고서 발행" },
   { href: "/news", label: "뉴스 클리핑" },
   { href: "/programs", label: "지원사업" },

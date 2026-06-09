@@ -12,8 +12,9 @@ npm run dev
 ## 포함된 범위
 
 - 공개 포털: `/`, `/services/[slug]`, `/news`, `/cases`, `/programs`, `/about`, `/contact`
+- 입찰 대응: `/rfp-readiness`, 나라장터 ESG 과업지시서 요구사항 매트릭스
 - 플랫폼 콘솔: `/app`, `/app/assessment/new`, 결과·분석·보고서·기업 관리 데모
-- 관리자: `/admin`, 지표·뉴스·뉴스레터·지원사업·사례·문의·사용자 관리 데모
+- 관리자: `/admin`, 지표·과업 대응·뉴스·뉴스레터·지원사업·사례·문의·사용자 관리 데모
 - API: 채점, 분석, 보고서, HWPX 프록시, 뉴스 cron, 뉴스레터 cron, 문의 접수
 - Supabase: 초기 DDL/RLS 정책과 지표·사례·지원사업 seed
 
@@ -59,7 +60,8 @@ https://esg.soilabcoop.kr/admin?token=관리자_토큰
 
 ## 다음 단계
 
-1. Supabase 프로젝트에 `supabase/migrations/001_initial_schema.sql` 적용
-2. `supabase/seed.sql`로 초기 지표 입력
-3. Auth/role middleware를 실제 세션 기반으로 강화
-4. Claude API JSON 검증, Puppeteer PDF, Railway HWPX 서비스를 실제 발행 플로우로 연결
+1. Supabase 프로젝트에 `supabase/migrations/002_rfp_operations.sql` 적용
+2. 교육 신청·출결·만족도 관리자 UI를 실제 테이블에 연결
+3. 진단 방문 일정과 사후점검 이력을 `field_visits`에 저장
+4. Auth/role middleware를 실제 세션 기반으로 강화
+5. Claude API JSON 검증, Puppeteer PDF, Railway HWPX 서비스를 실제 발행 플로우로 연결

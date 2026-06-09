@@ -6,6 +6,7 @@ import { LinkButton } from "@/components/ui/button";
 const navigation = [
   { href: "/services/assessment", label: "진단" },
   { href: "/services/consulting", label: "컨설팅" },
+  { href: "/rfp-readiness", label: "입찰대응" },
   { href: "/services/reporting", label: "보고서" },
   { href: "/news", label: "뉴스" },
   { href: "/cases", label: "사례" },

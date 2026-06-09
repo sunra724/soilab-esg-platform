@@ -1,10 +1,11 @@
-import { Inbox, LayoutDashboard, Newspaper, Settings, Users } from "lucide-react";
+import { ClipboardList, Inbox, LayoutDashboard, Newspaper, Settings, Users } from "lucide-react";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
 const nav = [
   { href: "/admin", label: "운영 현황", icon: LayoutDashboard },
   { href: "/admin/indicators", label: "지표", icon: Settings },
+  { href: "/admin/projects", label: "과업", icon: ClipboardList },
   { href: "/admin/news", label: "뉴스", icon: Newspaper },
   { href: "/admin/inquiries", label: "문의", icon: Inbox },
   { href: "/admin/users", label: "사용자", icon: Users }

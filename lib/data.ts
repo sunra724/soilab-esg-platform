@@ -2,7 +2,9 @@ import {
   BadgeCheck,
   BarChart3,
   BookOpenCheck,
+  BriefcaseBusiness,
   ClipboardCheck,
+  ClipboardList,
   FileText,
   Globe2,
   Leaf,
@@ -29,36 +31,36 @@ export const services: Service[] = [
     slug: "assessment",
     title: "ESG 진단·등급 산출",
     eyebrow: "평가 플랫폼",
-    summary: "K-ESG 기반 자체 진단, 영역별 점수, 글로벌 프레임워크 대응 현황을 한 화면에서 확인합니다.",
+    summary: "참여기업 접수, 증빙 제출, 현장방문, ESG 등급 산출, 개선과제와 성과분석까지 한 흐름으로 관리합니다.",
     description:
-      "기관 과업에서 반복되는 ESG 수준진단을 데이터 입력, 증빙 관리, 채점, 등급 산출, 결과 리포트까지 연결합니다.",
-    keywords: ["K-ESG", "중대성 분석", "등급 산출", "글로벌 지표 매핑"],
-    deliverables: ["진단 설문과 활동데이터 입력", "E/S/G 영역별 점수표", "CSDDD·EcoVadis·GRI 커버리지", "온실가스 배출량 요약"],
-    process: ["지표 선택", "응답·증빙 입력", "채점 엔진 계산", "결과 대시보드 발행"],
+      "경기도 진단평가 과업에서 반복되는 신청 접수, 제출서류 전산화, 현장방문 일정, 정량 진단, 등급화, 업종·규모별 비교, 만족도와 사후 모니터링 요구를 플랫폼 흐름으로 연결합니다.",
+    keywords: ["참여기업 모집·접수", "현장방문 2~3회", "등급 산출", "성과분석"],
+    deliverables: ["신청기업 접수·서류 DB", "현장방문 일정·진행 현황", "E/S/G 영역별 점수표", "등급·업종·규모별 비교", "개선과제·로드맵", "만족도·성과분석 자료"],
+    process: ["모집·신청 접수", "서류·증빙 검토", "현장방문 진단", "채점·등급 산출", "결과 설명·사후점검"],
     icon: ClipboardCheck
   },
   {
     slug: "consulting",
     title: "심화 컨설팅",
     eyebrow: "실행 로드맵",
-    summary: "공급망 실사 대응체계, 온실가스 인벤토리, ISO 인증 준비를 실행 과제로 쪼갭니다.",
+    summary: "일반컨설팅과 심화컨설팅을 나눠 공급망, 온실가스, ISO 인증, 데이터 관리체계를 실행 과제로 쪼갭니다.",
     description:
-      "진단 결과에서 취약 항목을 추출하고 단기·중장기 개선과제로 전환해 컨설팅 산출물의 일관성을 높입니다.",
-    keywords: ["공급망 실사 대응체계", "ESG 실행 로드맵·KPI", "ISO 인증", "온실가스 인벤토리"],
-    deliverables: ["취약점 분석", "우선순위 매트릭스", "부서별 KPI", "이행상태 관리"],
-    process: ["진단 결과 검토", "핵심 이슈 도출", "KPI 설계", "로드맵 운영"],
+      "세종·서울형 제안요청서에서 요구하는 정밀진단, 현장방문 3회 이상, 단기·중장기 이행계획, 심화 과제 선택형 지원을 컨설팅 워크플로우로 관리합니다.",
+    keywords: ["공급망 실사 대응체계", "ESG 실행 로드맵·KPI", "ISO 9001·14001·45001", "온실가스 인벤토리"],
+    deliverables: ["취약점 분석", "우선순위 매트릭스", "부서별 KPI", "심화컨설팅 트랙", "사후점검 이력"],
+    process: ["정밀진단", "핵심 이슈 도출", "현장 컨설팅", "KPI·로드맵 설계", "사후 이행점검"],
     icon: ShieldCheck
   },
   {
     slug: "education",
     title: "ESG 교육·아카데미",
     eyebrow: "조직 내재화",
-    summary: "임직원·협력사 대상 교육과 수료 관리를 플랫폼 데이터와 연결할 수 있게 설계했습니다.",
+    summary: "커리큘럼, 강사풀, 수강생 모집, 출결, 수료, 만족도, 회차별 보고서를 교육 용역 흐름에 맞춰 관리합니다.",
     description:
-      "교육은 별도 LMS로 확장 가능하도록 남겨두되, 현재 포털에서는 프로그램 안내와 문의 전환에 집중합니다.",
-    keywords: ["ESG 기초교육", "공급망 교육", "온실가스 실무", "수료증 확장"],
-    deliverables: ["교육 과정 안내", "기관 맞춤 커리큘럼", "사전·사후 진단", "만족도 리포트"],
-    process: ["대상 정의", "커리큘럼 구성", "현장·온라인 교육", "성과 리포트"],
+      "경기도·광명·의왕 교육 과업에서 요구하는 온·오프라인 교육, 실시간 송출, 수강생 통합 관리, 서명부/출결, 만족도 조사, 운영계획서와 최종보고서 산출물을 플랫폼 확장 항목으로 반영했습니다.",
+    keywords: ["온·오프라인 교육", "강사 POOL", "수강생·출결 관리", "만족도 조사"],
+    deliverables: ["회차별 커리큘럼", "강사 프로필·섭외 이력", "신청자·수료생 통계", "서명부·출결 현황", "만족도 분석", "운영계획·결과보고서"],
+    process: ["교육 기획", "홍보·신청 접수", "수강생 선발", "교육 운영·출결", "만족도·결과보고"],
     icon: BookOpenCheck
   },
   {
@@ -77,12 +79,12 @@ export const services: Service[] = [
     slug: "content",
     title: "ESG 콘텐츠·뉴스레터",
     eyebrow: "뉴스 클리핑",
-    summary: "ESG·CBAM·RE100·공급망실사 뉴스를 수집하고 요약해 웹과 뉴스레터로 배포합니다.",
+    summary: "월별 ESG 이슈, 전문가 기고, 기사 요약, ESG 금융·평가 통계 지표를 뉴스레터 산출물로 묶습니다.",
     description:
-      "관리자 승인 기반 큐레이션으로 저작권 리스크를 줄이고, 원문 링크와 자체 요약만 공개합니다.",
-    keywords: ["뉴스 클리핑", "AI 요약", "뉴스레터", "지원사업 캘린더"],
-    deliverables: ["뉴스 수집 큐", "카테고리 분류", "공개 뉴스 페이지", "뉴스레터 발송"],
-    process: ["소스 수집", "요약·분류", "관리자 승인", "구독자 발송"],
+      "서울시 ESG 정보제공 과업처럼 월간 뉴스레터 8편, 전문가 기고문, 주요 현안 원고, 기사·통계 정리를 운영자가 승인하고 배포하는 구조로 설계했습니다.",
+    keywords: ["월간 뉴스레터", "전문가 기고", "ESG 통계 지표", "뉴스 클리핑"],
+    deliverables: ["뉴스 수집 큐", "전문가 기고 기획", "카테고리 분류", "통계 지표 카드", "공개 뉴스 페이지", "뉴스레터 발송"],
+    process: ["대주제 설정", "소스 수집", "요약·분류", "전문가 원고 관리", "승인·발송"],
     icon: Megaphone
   }
 ];
@@ -95,11 +97,101 @@ export const platformStats = [
 ];
 
 export const capabilityRail = [
+  "참여기업 모집·접수 DB",
   "중대성 분석",
   "ESG 실행 로드맵·KPI",
   "공급망 실사 대응체계",
   "지속가능경영보고서 작성·공시 대응",
-  "온실가스 인벤토리"
+  "온실가스 인벤토리",
+  "수강생·출결·만족도 관리"
+];
+
+export const rfpReadinessItems = [
+  {
+    area: "참여기업 모집·신청 접수",
+    source: "경기도 진단평가 300개사 과업",
+    requirement: "홍보물 제작, 유선·이메일·홈페이지 모집, 신청 접수 시스템, 업종·지역별 접수 현황 실시간 관리",
+    platform: "문의/신청 DB, 관리자 리드 상태, 기업 정보 테이블, 모집 현황 대시보드로 확장",
+    status: "기반 반영",
+    next: "지원사업별 신청 폼과 제출서류 보완 요청 워크플로우"
+  },
+  {
+    area: "증빙·서류 전산화",
+    source: "진단평가·컨설팅 공통 요구",
+    requirement: "제출서류 접수·관리·전산화, 증빙자료 제출, 미비서류 보완 요청, 신용정보 기반 검증",
+    platform: "Supabase Storage와 responses.evidence_path, 기업별 파일 이력 구조 준비",
+    status: "스키마 반영",
+    next: "파일 업로드 UI와 보완요청 알림"
+  },
+  {
+    area: "현장방문 진단·컨설팅",
+    source: "경기도 2회 방문, 세종 3회 이상 방문",
+    requirement: "방문계획 수립, 일정 관리, 현장 진단, 결과 설명 재방문, 사후 이행점검",
+    platform: "평가 진행 페이지와 개선과제 상태, 신규 field_visits 마이그레이션 초안",
+    status: "확장 반영",
+    next: "방문 일정 캘린더와 컨설턴트 배정"
+  },
+  {
+    area: "등급·성과분석",
+    source: "경기도 5개년 960개사 성과분석",
+    requirement: "평가등급화, 업종·기업규모별 비교, 전후 개선 추이, 만족도와 사업 효과성 분석",
+    platform: "scores, emissions, result 차트, 성과분석 지표 카드",
+    status: "화면 반영",
+    next: "다년도 성과분석 테이블과 비교군 관리"
+  },
+  {
+    area: "교육 운영·수강생 관리",
+    source: "경기도·광명·의왕 ESG 인식확산 교육",
+    requirement: "커리큘럼, 강사풀, 신청자 데이터, 수강생 선발, 출결·서명부, 수료생 통계, SMS·메일 독려",
+    platform: "교육 서비스 카피 강화, education_* 마이그레이션 초안",
+    status: "확장 반영",
+    next: "교육 신청·출결·수료증 관리자 UI"
+  },
+  {
+    area: "만족도 조사·결과보고",
+    source: "교육·진단평가 공통 만족도 요구",
+    requirement: "회차별 만족도 조사, 강사·내용·환경 평가, 응답률 관리, 분석자료 제출",
+    platform: "survey 테이블 초안과 보고서 발행 흐름에 포함",
+    status: "확장 반영",
+    next: "설문 폼과 결과 대시보드"
+  },
+  {
+    area: "월간 ESG 정보제공",
+    source: "서울시 뉴스레터 8편·통계 지표 과업",
+    requirement: "전문가 기고, 주요 현안 원고, 기사 요약, ESG 금융·평가·RE100 통계 정리",
+    platform: "뉴스 큐레이션, 뉴스레터, 구독자 발송 API 구조",
+    status: "기반 반영",
+    next: "통계 지표 카드와 기고문 워크플로우"
+  },
+  {
+    area: "보안·산출물 관리",
+    source: "보안각서·자료 암호화·최종 산출물 제출 요구",
+    requirement: "접근권한, 자료 암호화, 접근기록, 보안교육·서약, 착수·중간·최종보고와 원본파일 제출",
+    platform: "관리자 토큰 가드, RLS 정책, reports/project_deliverables 마이그레이션 초안",
+    status: "기반 반영",
+    next: "역할 기반 Auth와 감사 로그"
+  }
+];
+
+export const educationProgramTemplates = [
+  {
+    title: "ESG 규제 대응 전략",
+    mode: "온·오프라인",
+    duration: "120분 내외",
+    topics: ["CBAM·CSDDD 규제 동향", "공급망 실사 대응", "경기도·지역 중소기업 대응 방안"]
+  },
+  {
+    title: "ESG 실무 담당자 역량강화",
+    mode: "온라인 Live",
+    duration: "3시간",
+    topics: ["RE100·탄소중립", "정보공시·평가 대응", "기업 맞춤형 실행 전략"]
+  },
+  {
+    title: "찾아가는 ESG 교육",
+    mode: "오프라인",
+    duration: "2시간",
+    topics: ["ESG 경영 쉬운 이해", "중소기업 생존 전략", "현장 적용 사례와 실습"]
+  }
 ];
 
 export const dashboardMetrics = [
@@ -307,6 +399,13 @@ export const adminTables = [
     description: "서비스 문의와 후속 연락 상태를 관리합니다."
   },
   {
+    href: "/admin/projects",
+    title: "과업 대응",
+    icon: ClipboardList,
+    rows: "8개 요구축",
+    description: "나라장터 과업지시서 반복 요구사항과 플랫폼 대응 상태를 관리합니다."
+  },
+  {
     href: "/admin/newsletter",
     title: "뉴스레터",
     icon: Sparkles,
@@ -323,7 +422,7 @@ export const adminTables = [
   {
     href: "/admin/programs",
     title: "지원사업",
-    icon: Leaf,
+    icon: BriefcaseBusiness,
     rows: "3개 예정 사업",
     description: "지원사업 캘린더와 마감일 노출을 관리합니다."
   }

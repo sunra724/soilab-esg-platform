@@ -6,7 +6,7 @@ import { ServiceCardGrid } from "@/components/product/service-card-grid";
 import { Badge } from "@/components/ui/badge";
 import { LinkButton } from "@/components/ui/button";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { capabilityRail, cases, newsItems, platformStats } from "@/lib/data";
+import { capabilityRail, cases, newsItems, platformStats, rfpReadinessItems } from "@/lib/data";
 
 export default function HomePage() {
   return (
@@ -67,6 +67,32 @@ export default function HomePage() {
           </Link>
         </div>
         <ServiceCardGrid />
+      </section>
+
+      <section className="border-y border-ink-900/10 bg-white py-16 md:py-20">
+        <div className="page-shell grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+          <SectionHeading
+            eyebrow="RFP Ready"
+            title="입찰 과업지시서 반복 요구사항을 기능으로 정리했습니다"
+            description="진단평가, 교육 운영, 컨설팅, 뉴스레터 과업에서 반복되는 운영 요구를 체크리스트와 데이터 구조로 반영했습니다."
+          >
+            <LinkButton href="/rfp-readiness" variant="secondary">
+              대응 매트릭스 보기
+              <ArrowRight size={17} aria-hidden />
+            </LinkButton>
+          </SectionHeading>
+          <div className="grid gap-3">
+            {rfpReadinessItems.slice(0, 5).map((item) => (
+              <Link className="grid gap-3 rounded-md border border-ink-900/10 bg-cloud-50 p-4 hover:border-earth-600/30 md:grid-cols-[180px_1fr]" href="/rfp-readiness" key={item.area}>
+                <div>
+                  <span className="text-xs font-bold text-water-600">{item.status}</span>
+                  <h3 className="mt-2 text-base font-bold text-ink-950">{item.area}</h3>
+                </div>
+                <p className="text-sm leading-6 text-ink-600">{item.requirement}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className="bg-ink-950 py-16 text-white md:py-20">
